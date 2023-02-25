@@ -10,18 +10,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-15F+O6I0pKjddvqcGJLYvk8YYJcwN4g3f6GvU6a/Z0LkRuNfcNp8E0F9hZBbNNZM" crossorigin="anonymous"></script>
     <div id="content">
         <div class="cabecera">
-            <div class="logo"></div>
-            <nav class="mi_navbar">
+            <nav class="xd">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="#" class="enlace">
+                    <img src="assets/img/static/logo_monkey.png" alt="" class="logo">
+                </a>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
+                    <li><a class="active" href="index.html">Inicio</a></li>
                     <li><a href="#">Sobre Mi</a></li>
                     <li><a href="#">Productos</a></li>
-                    <li><a href="#">Galerías</a></li>
+                    <li><a href="#">Galerias</a></li>
                     <li><a href="#">Publicaciones</a></li>
                     <li><a href="#"><button class="button-contacto">Contáctame</button></a></li>
                 </ul>
@@ -42,8 +49,8 @@
                     </p>
                 </div>
                 <div class="col-6 p-2 info">
-                    <img class="portada" src="assets/img/static/fernando.png" alt="">
-                </div>
+                    <img class="portada img-fluid" src="assets/img/static/fernando.png" alt="">
+                  </div>
             </div>
         </div>
     </div><!-- cierra content -->
