@@ -1,0 +1,104 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(1, 1, 1, 1), rgba(26, 14, 1, 1));
+    background-repeat: no-repeat;
+}
+
+.cabecera {
+    position: relative;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    width: 202px;
+    height: 178px;
+    background: url("assets/img/static/logo_monkey.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    overflow: hidden;
+  }
+  
+  .mi_navbar {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 100%;
+  }
+  
+  .mi_navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .mi_navbar li {
+    margin-right: 20px;
+  }
+  
+  .mi_navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  .mi_navbar a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .button-contacto {
+    background-color: blue;
+    border-radius: 5px;
+  }
+  .button-contacto:hover {
+    color: black;
+  }
+small {
+    color: #E87D0E;
+}
+.titulo {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 155.2%;
+    /* or 78px */
+
+    color: #FFFFFF;
+}
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    color: #FFFFFF;
+}
+
+@media(max-width: 670px) {
+    .info-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+        gap: 25px;
+    }
+    .info {
+        width: 140px;
+    }
+    .info img{
+        width: 328px;
+        border-radius: 10%;
+    }
+}
+
+
