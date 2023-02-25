@@ -1,69 +1,72 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 body {
     min-height: 100vh;
     background: linear-gradient(rgba(1, 1, 1, 1), rgba(26, 14, 1, 1));
     background-repeat: no-repeat;
 }
+nav{
+  height: 80px;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+}
+.logo{
+  height: 40px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+/* esto solo para dispositivos moviles
+.xd {
+  position: fixed;
+}
+*/
 
-.cabecera {
-    position: relative;
-    height: 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+li a.active, li a:hover{
+  background: #000090;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+section{
+  background: url(fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
 }
 
-.logo {
-    width: 202px;
-    height: 178px;
-    background: url("assets/img/static/logo_monkey.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    overflow: hidden;
-  }
-  
-  .mi_navbar {
-    position: absolute;
-    top: 40px;
-    right: 50px;
-    width: 100%;
-  }
-  
-  .mi_navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .mi_navbar li {
-    margin-right: 20px;
-  }
-  
-  .mi_navbar li:last-child {
-    margin-right: 0;
-  }
-  
-  .mi_navbar a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .button-contacto {
-    background-color: blue;
-    border-radius: 5px;
-  }
-  .button-contacto:hover {
-    color: black;
-  }
+/*estilos ocntenido*/
 small {
     color: #E87D0E;
 }
@@ -85,8 +88,12 @@ p {
     font-size: 16px;
     line-height: 200%;
     color: #FFFFFF;
+}.info-container img {
+  max-width: 100%;
+  height: auto;
 }
 
+/*responsive*/
 @media(max-width: 670px) {
     .info-container {
         grid-template-columns: repeat(auto-fill, 140px);
@@ -101,4 +108,49 @@ p {
     }
 }
 
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+  .xd {
+    position: fixed;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+  .xd {
+    position: fixed;
+  }
+}
 
