@@ -161,15 +161,16 @@ p {
 }
 
 .titulo_productos {
-  width: 293px;
-  height: 58px;
-  left: 124px;
-  top: 889px;
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 31px;
-  line-height: 187.5%;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  left: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 100%;
   /* or 58px */
   color: #FFFFFF;
 }
@@ -204,6 +205,14 @@ p {
   text-align: center;
   max-width: 100%;
 }
+.nombre-video {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 187.5%;
+  color: #FFFFFF;
+}
 
 .video {
   padding: 20px;
@@ -234,6 +243,9 @@ p {
     height: 315px;
     max-width: 100%;
   }
+  .titulo_productos {
+    text-align: center;
+  }
 }
 
 @media (max-width: 952px){
@@ -256,6 +268,9 @@ p {
     width: 560px;
     height: 315px;
     max-width: 100%;
+  }
+  .titulo_productos {
+    text-align: center;
   }
 }
 
@@ -302,6 +317,9 @@ p {
     width: 560px;
     height: 315px;
     max-width: 100%;
+  }
+  .titulo_productos {
+    text-align: center;
   }
 }
 
