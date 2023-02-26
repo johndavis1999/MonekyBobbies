@@ -2,31 +2,38 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   min-height: 100vh;
   background: linear-gradient(rgba(1, 1, 1, 1), rgba(26, 14, 1, 1));
   background-repeat: no-repeat;
 }
+
 nav{
   height: 80px;
   width: 100%;
 }
+
 .enlace{
   position: absolute;
   padding: 20px 50px;
 }
+
 .logo{
   height: 80px;
 }
+
 nav ul{
   float: right;
   margin-right: 20px;
 }
+
 nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
+
 /* esto solo para dispositivos moviles
 .xd {
   position: fixed;
@@ -42,6 +49,7 @@ nav ul li a{
   list-style: none;
   box-sizing: border-box;
 }
+
 li a.active, li a:hover{
   background: #000090;
   transition: .5s;
@@ -49,14 +57,17 @@ li a.active, li a:hover{
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgb(37, 37, 32) 0%, rgba(164,135,26,1) 35%, rgba(205,194,152,1) 73%, rgba(255,124,0,1) 100%);
 }
+
 li a.contacto{
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgb(37, 37, 32) 0%, rgba(164,135,26,1) 35%, rgba(205,194,152,1) 73%, rgba(255,124,0,1) 100%);
   transition: .5s;
 }
+
 li a.contacto:hover {
   color: black;
 }
+
 .checkbtn{
   font-size: 30px;
   color: #fff;
@@ -66,19 +77,23 @@ li a.contacto:hover {
   cursor: pointer;
   display: none;
 }
+
 #check{
   display: none;
 }
+
 section{
   background: url(fondo.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px);
 }
+
 /*estilos ocntenido*/
 small {
   color: #E87D0E;
 }
+
 .titulo {
   font-family: 'Poppins';
   font-style: normal;
@@ -88,6 +103,7 @@ small {
   /* or 78px */
   color: #FFFFFF;
 }
+
 p {
   font-family: 'Poppins';
   font-style: normal;
@@ -96,10 +112,12 @@ p {
   line-height: 200%;
   color: #FFFFFF;
 }
+
 .info-container img {
   max-width: 100%;
   height: auto;
 }
+
 .infobtn {
   width: 264px;
   height: 53px;
@@ -205,6 +223,7 @@ p {
   text-align: center;
   max-width: 100%;
 }
+
 .nombre-video {
   font-family: 'Poppins';
   font-style: normal;
@@ -225,24 +244,29 @@ p {
   max-width: 100%;
   height: auto;
 }
+
 /*responsive*/
 @media(max-width: 670px) {
   .info-container {
     grid-template-columns: repeat(auto-fill, 140px);
     gap: 25px;
   }
+
   .info {
     width: 140px;
   }
+
   .info img{
     width: 328px;
     border-radius: 10%;
   }
+
   iframe {
     width: 560px;
     height: 315px;
     max-width: 100%;
   }
+  
   .titulo_productos {
     text-align: center;
   }
@@ -252,23 +276,28 @@ p {
   .enlace{
     padding-left: 20px;
   }
+
   nav ul li a{
     font-size: 16px;
   }
+
   .fondo {
     position: fixed;
     background: #332c0d;
   }
+
   .info-container {
     grid-template-columns: repeat(auto-fill, 140px);
     gap: 25px;
     padding-top: 80px; /* agregar padding-top de 80px */
   }
+  
   iframe {
     width: 560px;
     height: 315px;
     max-width: 100%;
   }
+
   .titulo_productos {
     text-align: center;
   }
@@ -278,6 +307,7 @@ p {
   .checkbtn{
     display: block;
   }
+
   ul{
     position: fixed;
     width: 100%;
@@ -289,35 +319,43 @@ p {
     text-align: center;
     transition: all .5s;
   }
+
   nav ul li{
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
+
   nav ul li a{
     font-size: 20px;
   }
+
   li a:hover, li a.active{
     background: none;
     color: black;
   }
+
   #check:checked ~ ul{
     left:0;
   }
+
   .fondo {
     position: fixed;
     background: #332c0d;  
   }
+
   .info-container {
     grid-template-columns: repeat(auto-fill, 140px);
     gap: 25px;
     padding-top: 80px; /* agregar padding-top de 80px */
   }
+
   iframe {
     width: 560px;
     height: 315px;
     max-width: 100%;
   }
+
   .titulo_productos {
     text-align: center;
   }
@@ -329,4 +367,37 @@ p {
     height: 315px;
     max-width: 100%;
   }
+}
+
+/* seccion galerias*/
+.seccion-galerias {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background: linear-gradient(148.9deg, #090300 18.81%, rgba(9, 3, 0, 0) 199.4%);
+}
+.subtitulo-seccion {
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Centramos horizontalmente el texto */
+  margin-top: 10px; /* Añadimos un margen superior para separarlo del título */
+  color: #E87D0E;
+}
+
+.gallery-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 25px;
+  place-content: center;
+}
+
+.gallery-card {
+  width: 240px;
+}
+
+.gallery-card img{
+  width: 240px;
+  height: 240px;
+  border-radius: 20%;
 }
