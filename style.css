@@ -5,8 +5,12 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(rgba(1, 1, 1, 1), rgba(26, 14, 1, 1));
+  background: linear-gradient(rgba(1, 1, 1, 1), rgb(9, 5, 43));
   background-repeat: no-repeat;
+}
+/* sirve para que no se visualizen espacios en blanco cuando un elemento exede el body*/
+body {
+  overflow-x: hidden;
 }
 
 nav{
@@ -55,12 +59,12 @@ li a.active, li a:hover{
   transition: .5s;
   color: black;
   background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgb(37, 37, 32) 0%, rgba(164,135,26,1) 35%, rgba(205,194,152,1) 73%, rgba(255,124,0,1) 100%);
+  background: linear-gradient(90deg, rgb(118, 137, 158) 0%, rgb(69, 61, 141) 35%, rgb(37, 40, 180) 73%, rgb(4, 27, 90) 100%);
 }
 
 li a.contacto{
   background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgb(37, 37, 32) 0%, rgba(164,135,26,1) 35%, rgba(205,194,152,1) 73%, rgba(255,124,0,1) 100%);
+  background: linear-gradient(90deg, rgb(118, 137, 158) 0%, rgb(69, 61, 141) 35%, rgb(37, 40, 180) 73%, rgb(4, 27, 90) 100%);
   transition: .5s;
 }
 
@@ -124,7 +128,7 @@ p {
   left: 21px;
   top: 500px;
   background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgb(37, 37, 32) 0%, rgba(164,135,26,1) 35%, rgba(205,194,152,1) 73%, rgba(255,124,0,1) 100%);
+  background: linear-gradient(90deg, rgb(118, 137, 158) 0%, rgb(69, 61, 141) 35%, rgb(37, 40, 180) 73%, rgb(4, 27, 90) 100%);
   transition: .5s;
   border-radius: 20px;
 }
@@ -243,6 +247,76 @@ p {
 .video iframe {
   max-width: 100%;
   height: auto;
+}
+
+/* seccion galerias*/
+.seccion-galerias {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background: linear-gradient(148.9deg, #090300 18.81%, rgba(9, 3, 0, 0) 199.4%);
+  text-align: center; /* Centramos horizontalmente los elementos de la sección */
+
+}
+
+.subtitulo-seccion {
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Centramos horizontalmente el texto */
+  margin-top: 10px; /* Añadimos un margen superior para separarlo del título */
+  color: #E87D0E;
+}
+
+.gallery-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 25px;
+  place-content: center;
+}
+
+.gallery-card {
+  width: 240px;
+}
+
+.gallery-card img{
+  width: 240px;
+  height: 240px;
+  border-radius: 20%;
+}
+
+.btn-galerias {
+  margin-top: 50px; /* Añadimos un margen superior para separar el botón del contenido anterior */
+}
+
+/*footer*/
+/* Cambiar el color de fondo del footer y el color del texto */
+footer {
+  background-color: #070707;
+  color: #fff;
+}
+
+/* Darle margen inferior al logo */
+/*footer img {
+  margin-bottom: 1.5rem;
+}
+*/
+
+/* Agregar un título y cambiar el tamaño de la fuente del título de las columnas */
+footer h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Cambiar el tamaño de la fuente del texto de las columnas */
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Darle margen derecho a los iconos de redes sociales */
+footer .d-flex a:not(:last-child) {
+  margin-right: 1rem;
 }
 
 /*responsive*/
@@ -367,37 +441,4 @@ p {
     height: 315px;
     max-width: 100%;
   }
-}
-
-/* seccion galerias*/
-.seccion-galerias {
-  margin-top: 50px;
-  padding-top: 50px;
-  padding-bottom: 80px;
-  background: linear-gradient(148.9deg, #090300 18.81%, rgba(9, 3, 0, 0) 199.4%);
-}
-.subtitulo-seccion {
-  display: flex;
-  justify-content: center;
-  text-align: center; /* Centramos horizontalmente el texto */
-  margin-top: 10px; /* Añadimos un margen superior para separarlo del título */
-  color: #E87D0E;
-}
-
-.gallery-container {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
-  gap: 25px;
-  place-content: center;
-}
-
-.gallery-card {
-  width: 240px;
-}
-
-.gallery-card img{
-  width: 240px;
-  height: 240px;
-  border-radius: 20%;
 }
