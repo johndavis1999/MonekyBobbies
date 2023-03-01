@@ -20,11 +20,11 @@ nav{
 
 .enlace{
   position: absolute;
-  padding: 20px 50px;
+  padding: 10px 50px;
 }
 
 .logo{
-  height: 80px;
+  height: 100px;
 }
 
 nav ul{
@@ -47,7 +47,7 @@ nav ul li a{
   color: #fff;
   font-size: 18px;
   padding: 7px 13px;
-  border-radius: 3px;
+  border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
   list-style: none;
@@ -135,10 +135,7 @@ p {
 
 /* seccion productos */
 .cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
   gap: 25px;
-  place-content: center;
 }
 
 .product-card {
@@ -191,11 +188,23 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
   max-width: 100%;
   /* or 58px */
   color: #FFFFFF;
 }
+
+.product-container {
+  text-align: center;
+}
+
+.cards-container{
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  
+}
+
+
 
 /* seccion video */
 .seccion-video {
@@ -251,12 +260,14 @@ p {
 
 /* seccion galerias*/
 .seccion-galerias {
+  
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 80px;
   background: linear-gradient(148.9deg, #090300 18.81%, rgba(9, 3, 0, 0) 199.4%);
   text-align: center; /* Centramos horizontalmente los elementos de la sección */
-
+ 
+    
 }
 
 .subtitulo-seccion {
@@ -273,6 +284,9 @@ p {
   grid-template-columns: repeat(auto-fill, 240px);
   gap: 25px;
   place-content: center;
+  /* esto se añade para mantener centrado el contenedor en pantallas con mayor resolucion*/
+  max-width: 1200px;
+  margin: 30px auto;
 }
 
 .gallery-card {
@@ -319,6 +333,35 @@ footer .d-flex a:not(:last-child) {
   margin-right: 1rem;
 }
 
+/* ESTILOS PANTALL PRODUCTOS*/
+.proctos h1 {
+
+}
+
+.titulo-menu-productos {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  left: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  /* or 58px */
+  color: #FFFFFF;
+}
+
+.buscar {
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Centramos horizontalmente el texto */
+  background: #1a1a2c;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+}
+
+
 /*responsive*/
 @media(max-width: 670px) {
   .info-container {
@@ -349,6 +392,10 @@ footer .d-flex a:not(:last-child) {
 @media (max-width: 952px){
   .enlace{
     padding-left: 20px;
+  }
+  
+  .logo{
+    height: 60px;
   }
 
   nav ul li a{
@@ -441,4 +488,12 @@ footer .d-flex a:not(:last-child) {
     height: 315px;
     max-width: 100%;
   }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 25px;
+    place-content: center;
+  }
+ 
 }
