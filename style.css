@@ -306,6 +306,7 @@ p {
 /*footer*/
 /* Cambiar el color de fondo del footer y el color del texto */
 footer {
+  margin-top: 30px;
   background-color: #070707;
   color: #fff;
 }
@@ -360,6 +361,71 @@ footer .d-flex a:not(:last-child) {
   border: none;
   margin: 0 auto;
 }
+
+
+/* */
+/* */
+/* productos.html*/
+/* */
+/* */
+.pantalla-productos {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center; /* Centramos horizontalmente los elementos de la sección */   
+}
+
+.pantalla-productos-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 25px;
+  place-content: center;
+  /* esto se añade para mantener centrado el contenedor en pantallas con mayor resolucion*/
+  max-width: 1500px;
+  margin: 30px auto;
+}
+
+.window-product-card {
+  width: 240px;
+}
+
+.window-product-card img{
+  width: 240px;
+  height: 240px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+.window-product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.window-product-info div p:nth-child(1) {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.window-product-info div p:nth-child(2) {
+  margin-right: 50px;
+}
+
+.window-product-info div p:nth-child(2),
+.window-product-info div p:nth-child(3) {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*responsive*/
